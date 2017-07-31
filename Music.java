@@ -64,7 +64,7 @@ public class Music extends AppCompatActivity {
         super.onPause();
         mp.release(); //釋放MediaPlayer類別物件所操作的資源
     }
-    class SampleCompletionListener implements MediaPlayer.OnCompletionListener {
+    private class SampleCompletionListener implements MediaPlayer.OnCompletionListener {
 
         @Override
         public void onCompletion(MediaPlayer mp) {
@@ -73,7 +73,7 @@ public class Music extends AppCompatActivity {
             bt[2].setEnabled(false);
         }
     }
-    class SampleClickListener implements View.OnClickListener
+    private class SampleClickListener implements View.OnClickListener
     {
 
         @Override
