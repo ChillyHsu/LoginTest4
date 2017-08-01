@@ -37,5 +37,17 @@ public class MainPageActivity extends AppCompatActivity  {
                 MainPageActivity.this.finish();
             }
         });
+        Button button06 = (Button)findViewById(R.id.Button06);
+
+        button06.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent();
+                intent.setClass(MainPageActivity.this,Map.class);
+                startActivity(intent);
+                MainPageActivity.this.finish();
+            }
+        });
     }
 }

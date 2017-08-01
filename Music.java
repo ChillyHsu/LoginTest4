@@ -48,7 +48,7 @@ public class Music extends AppCompatActivity {
         bt[1].setEnabled(false);
         bt[2].setEnabled(false);
 
-        for(int i=0; i<bt.length; i++){
+        for(int i=0;i< bt.length;i++){
             bt[i].setOnClickListener(new SampleClickListener());
         }
         // setContentView(R.layout.activity_main);
